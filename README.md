@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+    A class component must always be identified as a class that extends the base React.Component. We then call constructor() and super(). We can then create state (as necessary). Finally, we call render(). 
+
 2. Describe the different phases of the component lifecycle.
+
+    All components start with the mounting phase, when the component is first created and setup within the virtual DOM. This is also when componentDidMount will be called, after the first render call. Next, if setState is called or there are new props the component will update and render will be called again. Once a component is no longer needed, it is unmounted, and componentWilUnmount is called to perform any necessary cleanup.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+    componentDidMount is called only once, after the first render. This is generally used to fetch any data necessary for the application. Afterwards, componentDidUpdate can be used to fetch additional data as necessary, set that data into state and force a re-render of the component. componentWillUnmount handles any necessary cleanup operations once a component is no longer needed. 
+
 4. Define stateful logic.
 
+    Stateful logic is any logic that is built into a component such as handling a click event, setting data into state or formatting data before display.
+
 5. Describe how to test a React component with React Testing Library.
+
+    The recommended framework to use for testing following the arrange, act assert model. Arrange means to setup our code so it can be tested. Act means calling a method or function that tests a particular piece of code. Assert means to check if the returned result matches what we expected the result to be. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -61,25 +71,25 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Starting the server**
 
-- [ ] Run `npm install` to download dependencies for the server.
-- [ ] Run the server using `npm start`.
-- [ ] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
+- [x] Run `npm install` to download dependencies for the server.
+- [x] Run the server using `npm start`.
+- [x] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
 
 **Starting the React app**
 
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm run start` to run the client application.
-- [ ] Your browser should open up the project as normal
+- [x] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [x] Still inside the `client` folder run `npm run start` to run the client application.
+- [x] Your browser should open up the project as normal
 
 **Starting your test runner**
 
-- [ ] In the final terminal window, make sure you are in the `client` folder still
+- [x] In the final terminal window, make sure you are in the `client` folder still
 - [ ] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
 
 **Commit and Push OFTEN!**
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
 
 ### Task 2: Project Requirements
 
@@ -135,6 +145,6 @@ test("displays plants in cart", () => {
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
