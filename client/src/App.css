@@ -1,8 +1,8 @@
 body {
   background: #0e101c;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
 }
 
 .container {
@@ -13,6 +13,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* .container, .plant-list, .plant-details, h1 {
+  background: papayawhip;
+
+} */
 
 h1 {
   font-weight: 100;
